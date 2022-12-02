@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7202E57A2939660500080BA0 /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7202E5782939660500080BA0 /* SelectionCell.swift */; };
+		7202E57B2939660500080BA0 /* SelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7202E5792939660500080BA0 /* SelectionCell.xib */; };
+		7202E57D293A901D00080BA0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7202E57C293A901D00080BA0 /* DetailViewController.swift */; };
 		72A5B35C2937FB3500B13606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B35B2937FB3500B13606 /* AppDelegate.swift */; };
 		72A5B35E2937FB3500B13606 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B35D2937FB3500B13606 /* SceneDelegate.swift */; };
 		72A5B3602937FB3500B13606 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B35F2937FB3500B13606 /* ViewController.swift */; };
 		72A5B3632937FB3500B13606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5B3612937FB3500B13606 /* Main.storyboard */; };
 		72A5B3652937FB3D00B13606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A5B3642937FB3D00B13606 /* Assets.xcassets */; };
 		72A5B3682937FB3D00B13606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5B3662937FB3D00B13606 /* LaunchScreen.storyboard */; };
+		72A5B3712937FC4D00B13606 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5B36F2937FC4D00B13606 /* Detail.storyboard */; };
+		72A5B3732938097F00B13606 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B3722938097F00B13606 /* Section.swift */; };
+		72A5B37529380A2200B13606 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B37429380A2200B13606 /* Item.swift */; };
+		72A5B3782938EAFB00B13606 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B3762938EAFB00B13606 /* HeaderCell.swift */; };
+		72A5B3792938EAFB00B13606 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A5B3772938EAFB00B13606 /* HeaderCell.xib */; };
+		72A5B37B2938F13A00B13606 /* ColorScheme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A5B37A2938F13A00B13606 /* ColorScheme.xcassets */; };
+		72A5B37E29394FE300B13606 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A5B37C29394FE300B13606 /* CategoryCell.swift */; };
+		72A5B37F29394FE300B13606 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A5B37D29394FE300B13606 /* CategoryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7202E5782939660500080BA0 /* SelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
+		7202E5792939660500080BA0 /* SelectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectionCell.xib; sourceTree = "<group>"; };
+		7202E57C293A901D00080BA0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		72A5B3582937FB3500B13606 /* HelenaStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelenaStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A5B35B2937FB3500B13606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72A5B35D2937FB3500B13606 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,14 @@
 		72A5B3642937FB3D00B13606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72A5B3672937FB3D00B13606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A5B3692937FB3D00B13606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A5B3702937FC4D00B13606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HelenaStore/Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
+		72A5B3722938097F00B13606 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		72A5B37429380A2200B13606 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		72A5B3762938EAFB00B13606 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		72A5B3772938EAFB00B13606 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		72A5B37A2938F13A00B13606 /* ColorScheme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorScheme.xcassets; sourceTree = "<group>"; };
+		72A5B37C29394FE300B13606 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		72A5B37D29394FE300B13606 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +62,8 @@
 		72A5B34F2937FB3500B13606 = {
 			isa = PBXGroup;
 			children = (
+				72A5B36F2937FC4D00B13606 /* Detail.storyboard */,
+				7202E57C293A901D00080BA0 /* DetailViewController.swift */,
 				72A5B35A2937FB3500B13606 /* HelenaStore */,
 				72A5B3592937FB3500B13606 /* Products */,
 			);
@@ -63,6 +87,15 @@
 				72A5B3642937FB3D00B13606 /* Assets.xcassets */,
 				72A5B3662937FB3D00B13606 /* LaunchScreen.storyboard */,
 				72A5B3692937FB3D00B13606 /* Info.plist */,
+				72A5B3722938097F00B13606 /* Section.swift */,
+				7202E5782939660500080BA0 /* SelectionCell.swift */,
+				7202E5792939660500080BA0 /* SelectionCell.xib */,
+				72A5B37C29394FE300B13606 /* CategoryCell.swift */,
+				72A5B37D29394FE300B13606 /* CategoryCell.xib */,
+				72A5B37429380A2200B13606 /* Item.swift */,
+				72A5B3762938EAFB00B13606 /* HeaderCell.swift */,
+				72A5B3772938EAFB00B13606 /* HeaderCell.xib */,
+				72A5B37A2938F13A00B13606 /* ColorScheme.xcassets */,
 			);
 			path = HelenaStore;
 			sourceTree = "<group>";
@@ -125,9 +158,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7202E57B2939660500080BA0 /* SelectionCell.xib in Resources */,
+				72A5B3792938EAFB00B13606 /* HeaderCell.xib in Resources */,
+				72A5B37F29394FE300B13606 /* CategoryCell.xib in Resources */,
 				72A5B3682937FB3D00B13606 /* LaunchScreen.storyboard in Resources */,
+				72A5B37B2938F13A00B13606 /* ColorScheme.xcassets in Resources */,
 				72A5B3652937FB3D00B13606 /* Assets.xcassets in Resources */,
 				72A5B3632937FB3500B13606 /* Main.storyboard in Resources */,
+				72A5B3712937FC4D00B13606 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +176,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7202E57D293A901D00080BA0 /* DetailViewController.swift in Sources */,
+				72A5B37529380A2200B13606 /* Item.swift in Sources */,
 				72A5B3602937FB3500B13606 /* ViewController.swift in Sources */,
+				72A5B3732938097F00B13606 /* Section.swift in Sources */,
+				72A5B37E29394FE300B13606 /* CategoryCell.swift in Sources */,
+				7202E57A2939660500080BA0 /* SelectionCell.swift in Sources */,
 				72A5B35C2937FB3500B13606 /* AppDelegate.swift in Sources */,
+				72A5B3782938EAFB00B13606 /* HeaderCell.swift in Sources */,
 				72A5B35E2937FB3500B13606 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +205,14 @@
 				72A5B3672937FB3D00B13606 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		72A5B36F2937FC4D00B13606 /* Detail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A5B3702937FC4D00B13606 /* Base */,
+			);
+			name = Detail.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
