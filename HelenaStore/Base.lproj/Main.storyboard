@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -56,10 +55,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Helena Store" id="Iv5-EE-tcV">
-                        <barButtonItem key="rightBarButtonItem" width="50" id="ndU-YM-0Zf">
-                            <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large" variableValue="1"/>
-                            <color key="tintColor" name="mediumGrey"/>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem id="3mL-Np-pYz"/>
+                            <barButtonItem image="craig3" id="p3k-yb-zCA"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="Wc7-OJ-gEG" id="JMw-u8-U0t"/>
@@ -89,7 +88,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle.fill" catalog="system" width="128" height="123"/>
+        <image name="craig3" width="44" height="45"/>
         <namedColor name="mediumGrey">
             <color red="0.77254901960784317" green="0.80784313725490198" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
