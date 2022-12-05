@@ -24,16 +24,16 @@
                                 <rect key="frame" x="15" y="19.666666666666671" width="170" height="101"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5q4-CM-DnX">
-                                        <rect key="frame" x="0.0" y="0.0" width="170" height="101"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="101"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening Celebration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ft-TG-5YG">
-                                                <rect key="frame" x="0.0" y="0.0" width="170" height="26"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="26"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.53333336109999996" green="0.55294120309999995" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sale up to 50% off" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ht-Rf-AJB">
-                                                <rect key="frame" x="0.0" y="34" width="170" height="67"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sale Up      To 50% off" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ht-Rf-AJB">
+                                                <rect key="frame" x="0.0" y="34" width="150" height="67"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="67" id="yUQ-Ri-BJs"/>
                                                 </constraints>
@@ -42,6 +42,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="8Ht-Rf-AJB" firstAttribute="leading" secondItem="5q4-CM-DnX" secondAttribute="leading" id="P2x-j5-443"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="lightGrey"/>
@@ -50,7 +53,7 @@
                                     <constraint firstItem="5q4-CM-DnX" firstAttribute="top" secondItem="sH0-yU-eb8" secondAttribute="top" id="UJ6-Kx-ItS"/>
                                     <constraint firstAttribute="width" constant="170" id="jMa-ob-OQ3"/>
                                     <constraint firstAttribute="height" constant="101" id="kDc-xi-gLh"/>
-                                    <constraint firstAttribute="trailing" secondItem="5q4-CM-DnX" secondAttribute="trailing" id="rGu-BI-yhx"/>
+                                    <constraint firstAttribute="trailing" secondItem="5q4-CM-DnX" secondAttribute="trailing" constant="20" id="rGu-BI-yhx"/>
                                     <constraint firstAttribute="bottom" secondItem="5q4-CM-DnX" secondAttribute="bottom" id="w1E-Lo-GuK"/>
                                 </constraints>
                             </view>

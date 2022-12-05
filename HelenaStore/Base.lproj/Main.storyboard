@@ -17,18 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Xn-2n-7PL">
-                                <rect key="frame" x="20" y="123" width="353" height="55"/>
-                                <color key="backgroundColor" name="searchBackground"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="hDD-ks-e9y"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wc7-OJ-gEG">
                                 <rect key="frame" x="0.0" y="193" width="393" height="659"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -41,6 +29,47 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Xn-2n-7PL">
+                                <rect key="frame" x="20" y="123" width="353" height="55"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvG-y3-dAW">
+                                        <rect key="frame" x="308" y="10" width="35" height="35"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Hti-qD-qSH">
+                                                <rect key="frame" x="7.6666666666666856" y="8.6666666666666536" width="20" height="18.333333333333336"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="XPp-E1-DeN"/>
+                                                    <constraint firstAttribute="height" constant="20" id="uIA-bA-SAe"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="searchGreen"/>
+                                        <constraints>
+                                            <constraint firstItem="Hti-qD-qSH" firstAttribute="centerX" secondItem="wvG-y3-dAW" secondAttribute="centerX" id="EoJ-fX-vqK"/>
+                                            <constraint firstAttribute="height" constant="35" id="MZa-Y5-Yfp"/>
+                                            <constraint firstItem="Hti-qD-qSH" firstAttribute="centerY" secondItem="wvG-y3-dAW" secondAttribute="centerY" id="NEK-go-hIl"/>
+                                            <constraint firstAttribute="width" constant="35" id="mM7-sW-HBu"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="searchBackground"/>
+                                <constraints>
+                                    <constraint firstItem="wvG-y3-dAW" firstAttribute="top" secondItem="3Xn-2n-7PL" secondAttribute="top" constant="10" id="ebe-LG-DMA"/>
+                                    <constraint firstAttribute="height" constant="55" id="hDD-ks-e9y"/>
+                                    <constraint firstAttribute="trailing" secondItem="wvG-y3-dAW" secondAttribute="trailing" constant="10" id="lIE-5s-OJA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -88,12 +117,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="craig3" width="44" height="45"/>
+        <image name="craig3" width="29.333333969116211" height="30"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <namedColor name="mediumGrey">
             <color red="0.77254901960784317" green="0.80784313725490198" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="searchBackground">
             <color red="0.96470588235294119" green="0.96862745098039216" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="searchGreen">
+            <color red="0.40392156862745099" green="0.67843137254901964" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

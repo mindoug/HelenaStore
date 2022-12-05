@@ -18,28 +18,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30D-Fm-7Rl">
-                                <rect key="frame" x="0.0" y="359" width="393" height="493"/>
+                                <rect key="frame" x="0.0" y="437" width="393" height="415"/>
                                 <color key="backgroundColor" name="mediumGrey"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="493" id="SLz-O2-zCW"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRO-DG-rWe">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="361"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman3" translatesAutoresizingMaskIntoConstraints="NO" id="eRO-DG-rWe">
+                                <rect key="frame" x="0.0" y="50" width="393" height="387"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="387" id="4qd-CB-Krk"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="I7c-Ou-X2U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="30D-Fm-7Rl" firstAttribute="leading" secondItem="I7c-Ou-X2U" secondAttribute="leading" id="3zb-of-3Aw"/>
-                            <constraint firstItem="30D-Fm-7Rl" firstAttribute="trailing" secondItem="I7c-Ou-X2U" secondAttribute="trailing" id="H2f-ow-Sw6"/>
-                            <constraint firstAttribute="bottom" secondItem="30D-Fm-7Rl" secondAttribute="bottom" id="RHT-ih-suO"/>
+                            <constraint firstItem="30D-Fm-7Rl" firstAttribute="top" secondItem="eRO-DG-rWe" secondAttribute="bottom" id="BJV-aV-yi0"/>
+                            <constraint firstItem="eRO-DG-rWe" firstAttribute="leading" secondItem="I7c-Ou-X2U" secondAttribute="leading" id="VjL-8B-Gay"/>
+                            <constraint firstItem="30D-Fm-7Rl" firstAttribute="leading" secondItem="I7c-Ou-X2U" secondAttribute="leading" id="akQ-FA-mfG"/>
+                            <constraint firstItem="30D-Fm-7Rl" firstAttribute="trailing" secondItem="I7c-Ou-X2U" secondAttribute="trailing" id="fi9-Ee-2m1"/>
+                            <constraint firstItem="eRO-DG-rWe" firstAttribute="trailing" secondItem="I7c-Ou-X2U" secondAttribute="trailing" id="qXm-5o-GeE"/>
+                            <constraint firstItem="eRO-DG-rWe" firstAttribute="top" secondItem="WVu-5a-YFD" secondAttribute="top" constant="50" id="u2j-Q0-wl1"/>
+                            <constraint firstAttribute="bottom" secondItem="30D-Fm-7Rl" secondAttribute="bottom" id="u9n-Xf-SBI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CRN-sU-5rT">
@@ -85,6 +88,7 @@
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="95"/>
         <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="woman3" width="165" height="185"/>
         <namedColor name="dark">
             <color red="0.13333333333333333" green="0.16862745098039217" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
