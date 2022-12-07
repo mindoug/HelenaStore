@@ -151,13 +151,13 @@
 				72E5BACE2940E5DC00073576 /* DetailHeaderCell.swift */,
 				72E5BACF2940E5DC00073576 /* DetailHeaderCell.xib */,
 				72E5BABC29403F7D00073576 /* DescriptionCell.swift */,
+				72E5BABD29403F7D00073576 /* DescriptionCell.xib */,
 				72E5BAC029403F9300073576 /* ColorCell.swift */,
+				72E5BAC129403F9300073576 /* ColorCell.xib */,
 				72E5BAC429403FA600073576 /* SizeCell.swift */,
+				72E5BAC529403FA600073576 /* SizeCell.xib */,
 				72E5BAC829403FDE00073576 /* ButtonCell.swift */,
 				72E5BAC929403FDE00073576 /* ButtonCell.xib */,
-				72E5BAC529403FA600073576 /* SizeCell.xib */,
-				72E5BAC129403F9300073576 /* ColorCell.xib */,
-				72E5BABD29403F7D00073576 /* DescriptionCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";

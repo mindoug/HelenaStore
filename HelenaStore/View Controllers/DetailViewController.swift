@@ -26,7 +26,7 @@ class DetailViewController: UIViewController {
             switch sectionType {
                 
             case .detailHeader: return LayoutSectionFactory.detailHeader()
-//            case .color: return LayoutSectionFactory.color()
+            case .color: return LayoutSectionFactory.color()
 //            case .size: return LayoutSectionFactory.size()
 //            case .description: return LayoutSectionFactory.description()
 //            case .button: return LayoutSectionFactory.button()
@@ -50,7 +50,7 @@ class DetailViewController: UIViewController {
     private func setupCollectionView() {
         let cells: [RegisterableView] = [
             .nib(DetailHeaderCell.self),
-//            .nib(ColorCell.self),
+            .nib(ColorCell.self),
 //            .nib(SizeCell.self),
 //            .nib(ButtonCell.self),
 //            .nib(DescriptionCell.self)
@@ -70,7 +70,8 @@ class DetailViewController: UIViewController {
             switch sectionType {
             case .detailHeader: let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DetailHeaderCell", for: indexPath)
                 return cell
-//            case .color:
+            case .color: let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColorCell", for: indexPath)
+                return cell
 //            case .size:
 //            case .description:
 //            case .button:
@@ -81,6 +82,9 @@ class DetailViewController: UIViewController {
             Section(type: .detailHeader, items: [
             Item()
             ]),
+            Section(type: .color, items: [
+            Item()
+            ])
         ]
         var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
         snapshot.appendSections(sections)

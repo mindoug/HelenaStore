@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="275" height="29"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patek Philippe Dress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6z-SN-3lg">
-                                <rect key="frame" x="8" y="0.0" width="210.33333333333334" height="29"/>
+                                <rect key="frame" x="0.0" y="0.0" width="210.33333333333334" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,7 +29,7 @@
                         </subviews>
                         <color key="backgroundColor" name="mediumGrey"/>
                         <constraints>
-                            <constraint firstItem="W6z-SN-3lg" firstAttribute="leading" secondItem="yB1-m6-WZZ" secondAttribute="leading" constant="8" id="JPP-IR-kDv"/>
+                            <constraint firstItem="W6z-SN-3lg" firstAttribute="leading" secondItem="yB1-m6-WZZ" secondAttribute="leading" id="JPP-IR-kDv"/>
                             <constraint firstAttribute="width" constant="275" id="Jae-aO-V4I"/>
                             <constraint firstItem="W6z-SN-3lg" firstAttribute="top" secondItem="yB1-m6-WZZ" secondAttribute="top" id="PJo-x1-Acq"/>
                             <constraint firstAttribute="bottom" secondItem="W6z-SN-3lg" secondAttribute="bottom" id="ezi-WR-QOX"/>
