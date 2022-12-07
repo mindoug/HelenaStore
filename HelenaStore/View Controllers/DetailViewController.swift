@@ -11,8 +11,9 @@ class DetailViewController: UIViewController {
     
     private var dataSource: UICollectionViewDiffableDataSource<Section, Item>!
     private var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
+   
+    @IBOutlet weak var detailCollectionView: UICollectionView!
     
-    @IBOutlet weak var collectionView: UICollectionView!
     
     lazy var collectionViewLayout: UICollectionViewLayout = {
         let layout = UICollectionViewCompositionalLayout {
@@ -24,15 +25,12 @@ class DetailViewController: UIViewController {
             
             switch sectionType {
                 
-            case .detailHeader:
-                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
-                let item = NSCollectionLayoutItem(layoutSize: itemSize)
-                let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
-                let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-                group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
-                let section = NSCollectionLayoutSection(group: group)
-                return section
-                
+            case .detailHeader: return LayoutSectionFactory.detailHeader()
+//            case .color: return LayoutSectionFactory.color()
+//            case .size: return LayoutSectionFactory.size()
+//            case .description: return LayoutSectionFactory.description()
+//            case .button: return LayoutSectionFactory.button()
+//
             default: return nil
             }
         }
@@ -45,25 +43,37 @@ class DetailViewController: UIViewController {
     }
     
     func initialize() {
-//        setupCollectionView()
-//        configureDataSource()
+        setupCollectionView()
+        configureDataSource()
     }
     
     private func setupCollectionView() {
-        collectionView.register(UINib(nibName: "DetailHeaderCell", bundle: .main), forCellWithReuseIdentifier: "DetailHeaderCell")
+        let cells: [RegisterableView] = [
+            .nib(DetailHeaderCell.self),
+//            .nib(ColorCell.self),
+//            .nib(SizeCell.self),
+//            .nib(ButtonCell.self),
+//            .nib(DescriptionCell.self)
+        ]
         
-        collectionView.collectionViewLayout = collectionViewLayout
+        detailCollectionView.register(cells: cells)
+        detailCollectionView.collectionViewLayout = collectionViewLayout
     }
     
     private func configureDataSource() {
-        dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView) { [weak self] (collectionView, indexPath, item) in
+        dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: detailCollectionView) { [weak self] (collectionView, indexPath, item) in
             guard let self = self else { return UICollectionViewCell() }
             
             let snapshot = self.dataSource.snapshot()
             let sectionType = snapshot.sectionIdentifiers[indexPath.section].type
             
             switch sectionType {
-            
+            case .detailHeader: let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DetailHeaderCell", for: indexPath)
+                return cell
+//            case .color:
+//            case .size:
+//            case .description:
+//            case .button:
             default: return nil
             }
         }

@@ -63,7 +63,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="collectionView" destination="sY2-Fw-v9I" id="QzB-2J-Pkb"/>
+                        <outlet property="detailCollectionView" destination="sY2-Fw-v9I" id="gy3-qQ-kAr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjq-gS-Imu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

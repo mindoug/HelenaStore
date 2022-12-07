@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VKp-My-LgI">
+            <rect key="frame" x="0.0" y="0.0" width="275" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="1po-pN-e6Y">
+                <rect key="frame" x="0.0" y="0.0" width="275" height="30"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yB1-m6-WZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="275" height="29"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patek Philippe Dress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6z-SN-3lg">
+                                <rect key="frame" x="8" y="0.0" width="210.33333333333334" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="mediumGrey"/>
+                        <constraints>
+                            <constraint firstItem="W6z-SN-3lg" firstAttribute="leading" secondItem="yB1-m6-WZZ" secondAttribute="leading" constant="8" id="JPP-IR-kDv"/>
+                            <constraint firstAttribute="width" constant="275" id="Jae-aO-V4I"/>
+                            <constraint firstItem="W6z-SN-3lg" firstAttribute="top" secondItem="yB1-m6-WZZ" secondAttribute="top" id="PJo-x1-Acq"/>
+                            <constraint firstAttribute="bottom" secondItem="W6z-SN-3lg" secondAttribute="bottom" id="ezi-WR-QOX"/>
+                            <constraint firstAttribute="height" constant="29" id="oXz-d3-dha"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="yB1-m6-WZZ" secondAttribute="bottom" id="5E5-8x-Yvp"/>
+                    <constraint firstItem="yB1-m6-WZZ" firstAttribute="leading" secondItem="1po-pN-e6Y" secondAttribute="leading" id="665-rb-N0x"/>
+                    <constraint firstAttribute="trailing" secondItem="yB1-m6-WZZ" secondAttribute="trailing" id="B2J-mT-yID"/>
+                    <constraint firstItem="yB1-m6-WZZ" firstAttribute="top" secondItem="1po-pN-e6Y" secondAttribute="top" id="U5e-aB-hcP"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="275" height="30"/>
+            <point key="canvasLocation" x="197.70992366412213" y="-2.8169014084507045"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="mediumGrey">
+            <color red="0.77254901960784317" green="0.80784313725490198" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
