@@ -27,7 +27,7 @@ class DetailViewController: UIViewController {
                 
             case .detailHeader: return LayoutSectionFactory.detailHeader()
             case .color: return LayoutSectionFactory.color()
-//            case .size: return LayoutSectionFactory.size()
+            case .size: return LayoutSectionFactory.size()
 //            case .description: return LayoutSectionFactory.description()
 //            case .button: return LayoutSectionFactory.button()
 //
@@ -51,7 +51,7 @@ class DetailViewController: UIViewController {
         let cells: [RegisterableView] = [
             .nib(DetailHeaderCell.self),
             .nib(ColorCell.self),
-//            .nib(SizeCell.self),
+            .nib(SizeCell.self),
 //            .nib(ButtonCell.self),
 //            .nib(DescriptionCell.self)
         ]
@@ -72,7 +72,8 @@ class DetailViewController: UIViewController {
                 return cell
             case .color: let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ColorCell", for: indexPath)
                 return cell
-//            case .size:
+            case .size: let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SizeCell", for: indexPath)
+                return cell
 //            case .description:
 //            case .button:
             default: return nil
@@ -83,6 +84,9 @@ class DetailViewController: UIViewController {
             Item()
             ]),
             Section(type: .color, items: [
+            Item()
+            ]),
+            Section(type: .size, items: [
             Item()
             ])
         ]
