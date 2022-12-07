@@ -26,10 +26,11 @@ struct Section: Hashable {
         case header
         case category
         case selection
-        case image
-        case detail
+        case description
         case button
         case detailHeader
+        case color
+        case size
     }
     
     struct SectionType: RawRepresentable, Hashable {
@@ -43,10 +44,11 @@ struct Section: Hashable {
         static let header = SectionType(rawValue: Section.ItemSectionType.header.rawValue)
         static let category = SectionType(rawValue: Section.ItemSectionType.category.rawValue)
         static let selection = SectionType(rawValue: Section.ItemSectionType.selection.rawValue)
-        static let image = SectionType(rawValue: Section.ItemSectionType.image.rawValue)
-        static let detail = SectionType(rawValue: Section.ItemSectionType.detail.rawValue)
+        static let description = SectionType(rawValue: Section.ItemSectionType.description.rawValue)
+        static let detailHeader = SectionType(rawValue: Section.ItemSectionType.detailHeader.rawValue)
         static let button = SectionType(rawValue: Section.ItemSectionType.button
             .rawValue)
-        static let detailHeader = SectionType(rawValue: Section.ItemSectionType.button.rawValue)
+        static let color = SectionType(rawValue: Section.ItemSectionType.color.rawValue)
+        static let size = SectionType(rawValue: Section.ItemSectionType.size.rawValue)
     }
 }

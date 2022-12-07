@@ -57,6 +57,10 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="100" height="40"/>
+            <connections>
+                <outlet property="categoryLabel" destination="STK-QU-QEe" id="zip-Zt-7Ef"/>
+                <outlet property="dotLabel" destination="Jbv-m6-k94" id="uE0-bY-KSC"/>
+            </connections>
             <point key="canvasLocation" x="32.061068702290072" y="17.605633802816904"/>
         </collectionViewCell>
     </objects>

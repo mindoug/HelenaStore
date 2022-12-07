@@ -9,29 +9,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="DRX-cb-hW5">
             <objects>
-                <viewController id="6Xc-tN-6ru" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="6Xc-tN-6ru" customClass="DetailViewController" customModule="HelenaStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WVu-5a-YFD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30D-Fm-7Rl">
-                                <rect key="frame" x="0.0" y="437" width="393" height="415"/>
-                                <color key="backgroundColor" name="mediumGrey"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman3" translatesAutoresizingMaskIntoConstraints="NO" id="eRO-DG-rWe">
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="eRO-DG-rWe">
                                 <rect key="frame" x="0.0" y="50" width="393" height="387"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="387" id="4qd-CB-Krk"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30D-Fm-7Rl">
+                                <rect key="frame" x="0.0" y="437" width="393" height="415"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sY2-Fw-v9I" customClass="detai">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="415"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z1o-mN-dDO">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" name="mediumGrey"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="I7c-Ou-X2U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -45,53 +60,19 @@
                             <constraint firstAttribute="bottom" secondItem="30D-Fm-7Rl" secondAttribute="bottom" id="u9n-Xf-SBI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="CRN-sU-5rT">
-                        <barButtonItem key="leftBarButtonItem" image="arrow.left" catalog="system" id="K3g-gM-Fy1">
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                    <color key="value" name="dark"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="bookmark" catalog="system" id="QY4-W7-KPt">
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                    <color key="value" name="dark"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </barButtonItem>
-                    </navigationItem>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="sY2-Fw-v9I" id="QzB-2J-Pkb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjq-gS-Imu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2525.9541984732823" y="3.5211267605633805"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="GD8-ZI-Cbr">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Auq-nc-IsE" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qUz-1Q-Cog">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="6Xc-tN-6ru" kind="relationship" relationship="rootViewController" id="oVc-rw-vcc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8WC-qI-eQK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1599.2366412213739" y="3.5211267605633805"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="arrow.left" catalog="system" width="128" height="95"/>
-        <image name="bookmark" catalog="system" width="110" height="128"/>
-        <image name="woman3" width="165" height="185"/>
-        <namedColor name="dark">
-            <color red="0.13333333333333333" green="0.16862745098039217" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <image name="person" width="375" height="387"/>
         <namedColor name="mediumGrey">
             <color red="0.77254901960784317" green="0.80784313725490198" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

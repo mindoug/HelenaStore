@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZZp-zT-6Ie">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jlG-g1-nFJ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,7 +13,7 @@
         <!--Helena Store-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelenaStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="HelenaStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,12 +58,24 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you looking for?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epY-fO-glI">
+                                        <rect key="frame" x="8" y="17" width="175" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="UmD-Gz-A6i"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" name="mediumGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" name="searchBackground"/>
                                 <constraints>
+                                    <constraint firstItem="epY-fO-glI" firstAttribute="leading" secondItem="3Xn-2n-7PL" secondAttribute="leading" constant="8" id="De5-U0-WQJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="epY-fO-glI" secondAttribute="bottom" constant="17" id="MqW-MJ-VVs"/>
                                     <constraint firstItem="wvG-y3-dAW" firstAttribute="top" secondItem="3Xn-2n-7PL" secondAttribute="top" constant="10" id="ebe-LG-DMA"/>
                                     <constraint firstAttribute="height" constant="55" id="hDD-ks-e9y"/>
                                     <constraint firstAttribute="trailing" secondItem="wvG-y3-dAW" secondAttribute="trailing" constant="10" id="lIE-5s-OJA"/>
+                                    <constraint firstItem="epY-fO-glI" firstAttribute="top" secondItem="3Xn-2n-7PL" secondAttribute="top" constant="17" id="rRt-O2-aMm"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -83,11 +96,11 @@
                             <constraint firstItem="Wc7-OJ-gEG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vnT-iU-tAt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Helena Store" id="Iv5-EE-tcV">
-                        <rightBarButtonItems>
-                            <barButtonItem id="3mL-Np-pYz"/>
-                            <barButtonItem image="craig3" id="p3k-yb-zCA"/>
-                        </rightBarButtonItems>
+                    <navigationItem key="navigationItem" title="Helena Store" largeTitleDisplayMode="never" id="Iv5-EE-tcV">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="p3k-yb-zCA">
+                            <imageReference key="image" image="person.crop.circle.fill" catalog="system" symbolScale="large" variableValue="1"/>
+                            <color key="tintColor" name="mediumGrey"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="Wc7-OJ-gEG" id="JMw-u8-U0t"/>
@@ -95,30 +108,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="918.32061068702285" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="2771.7557251908397" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="73U-4J-ltw">
+        <scene sceneID="9Me-0B-4vc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZZp-zT-6Ie" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jlG-g1-nFJ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vSQ-kj-UVc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NcM-Ol-KGD">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="dark"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="dark"/>
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <imageReference key="backIndicatorImage" image="arrow.left" catalog="system" variableValue="0.60000000000000009"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xmb-vf-Uzz"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="azd-tT-p6o"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0ie-lI-xeF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2Z-Ea-CbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8.3969465648854964" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1845.0381679389311" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
-        <image name="craig3" width="29.333333969116211" height="30"/>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="dark">
+            <color red="0.13333333333333333" green="0.16862745098039217" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="mediumGrey">
             <color red="0.77254901960784317" green="0.80784313725490198" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

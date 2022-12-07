@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     
     private var dataSource: UICollectionViewDiffableDataSource<Section, Item>!
     private var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
@@ -23,36 +23,9 @@ class ViewController: UIViewController {
             let sectionType = snapshot.sectionIdentifiers[sectionIndex].type
             
             switch sectionType {
-                
-            case .header:
-                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
-                let item = NSCollectionLayoutItem(layoutSize: itemSize)
-                let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(140))
-                let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-                group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
-                let section = NSCollectionLayoutSection(group: group)
-                return section
-                
-            case .category:
-                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
-                let item = NSCollectionLayoutItem(layoutSize: itemSize)
-                let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.35), heightDimension: .absolute(60))
-                let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-                group.contentInsets = NSDirectionalEdgeInsets(top: 15, leading: 0, bottom: 10, trailing: 0)
-                let section = NSCollectionLayoutSection(group: group)
-                section.orthogonalScrollingBehavior = .groupPaging
-                return section
-                
-            case .selection:
-                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
-                let item = NSCollectionLayoutItem(layoutSize: itemSize)
-                let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.45), heightDimension: .absolute(267))
-                let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-                group.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 15, bottom: 10, trailing: 0)
-                let section = NSCollectionLayoutSection(group: group)
-                section.orthogonalScrollingBehavior = .groupPaging
-                return section
-                
+            case .header: return LayoutSectionFactory.header()
+            case .category: return LayoutSectionFactory.category()
+            case .selection: return LayoutSectionFactory.selection()
             default: return nil
             }
         }
@@ -70,10 +43,14 @@ class ViewController: UIViewController {
     }
     
     private func setupCollectionView() {
-        collectionView.register(UINib(nibName: "HeaderCell", bundle: .main), forCellWithReuseIdentifier: "HeaderCell")
-        collectionView.register(UINib(nibName: "CategoryCell", bundle: .main), forCellWithReuseIdentifier: "CategoryCell")
-        collectionView.register(UINib(nibName: "SelectionCell", bundle: .main), forCellWithReuseIdentifier: "SelectionCell")
         
+        let cells: [RegisterableView] = [
+            .nib(HeaderCell.self),
+            .nib(CategoryCell.self),
+            .nib(SelectionCell.self)
+        ]
+        collectionView.delegate = self
+        collectionView.register(cells: cells)
         collectionView.collectionViewLayout = collectionViewLayout
     }
 
@@ -104,10 +81,10 @@ class ViewController: UIViewController {
             Item()
             ]),
             Section(type: .category, items: [
-                Item(), Item(), Item(), Item()
+            Item(), Item(), Item(), Item()
             ]),
             Section(type: .selection, items: [
-                   Item(), Item(), Item(), Item()
+            Item(), Item(), Item(), Item()
             ]),
             Section(type: .selection, items: [
             Item(), Item(), Item(), Item()
@@ -120,3 +97,10 @@ class ViewController: UIViewController {
     }
 }
 
+extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Detail", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}

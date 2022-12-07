@@ -41,12 +41,12 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        initialize()
     }
     
-    func setupView() {
-        setupCollectionView()
-        configureDataSource()
+    func initialize() {
+//        setupCollectionView()
+//        configureDataSource()
     }
     
     private func setupCollectionView() {
@@ -63,10 +63,7 @@ class DetailViewController: UIViewController {
             let sectionType = snapshot.sectionIdentifiers[indexPath.section].type
             
             switch sectionType {
-            case .detailHeader:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DetailHeaderCell", for: indexPath)
-                return cell
-                
+            
             default: return nil
             }
         }
