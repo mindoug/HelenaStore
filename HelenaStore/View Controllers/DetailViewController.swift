@@ -14,7 +14,6 @@ class DetailViewController: UIViewController {
    
     @IBOutlet weak var detailCollectionView: UICollectionView!
     
-    
     lazy var collectionViewLayout: UICollectionViewLayout = {
         let layout = UICollectionViewCompositionalLayout {
             [weak self] (sectionIndex, environment) -> NSCollectionLayoutSection? in
@@ -28,9 +27,9 @@ class DetailViewController: UIViewController {
             case .detailHeader: return LayoutSectionFactory.detailHeader()
             case .color: return LayoutSectionFactory.color()
             case .size: return LayoutSectionFactory.size()
-//            case .description: return LayoutSectionFactory.description()
-//            case .button: return LayoutSectionFactory.button()
-//
+            case .description: return LayoutSectionFactory.description()
+            case .button: return LayoutSectionFactory.button()
+
             default: return nil
             }
         }
@@ -52,8 +51,8 @@ class DetailViewController: UIViewController {
             .nib(DetailHeaderCell.self),
             .nib(ColorCell.self),
             .nib(SizeCell.self),
-//            .nib(ButtonCell.self),
-//            .nib(DescriptionCell.self)
+            .nib(ButtonCell.self),
+            .nib(DescriptionCell.self)
         ]
         
         detailCollectionView.register(cells: cells)
@@ -74,8 +73,10 @@ class DetailViewController: UIViewController {
                 return cell
             case .size: let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SizeCell", for: indexPath)
                 return cell
-//            case .description:
-//            case .button:
+            case .description: let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DescriptionCell", for: indexPath)
+                return cell
+            case .button: let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ButtonCell", for: indexPath)
+                return cell
             default: return nil
             }
         }
@@ -87,6 +88,12 @@ class DetailViewController: UIViewController {
             Item()
             ]),
             Section(type: .size, items: [
+            Item()
+            ]),
+            Section(type: .description, items: [
+            Item()
+            ]),
+            Section(type: .button, items: [
             Item()
             ])
         ]
