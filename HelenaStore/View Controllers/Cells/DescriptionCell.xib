@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPs-1J-7GQ">
-                        <rect key="frame" x="0.0" y="0.0" width="335" height="132"/>
+                        <rect key="frame" x="0.0" y="0.0" width="345" height="132"/>
                         <color key="backgroundColor" name="mediumGrey"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="132" id="GlY-Kb-B0m"/>
@@ -35,7 +35,7 @@
                 <constraint firstAttribute="bottom" secondItem="lPs-1J-7GQ" secondAttribute="bottom" id="CvF-GQ-DAG"/>
                 <constraint firstItem="lPs-1J-7GQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DaR-ge-yfv"/>
                 <constraint firstItem="lPs-1J-7GQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ryb-1z-Clj"/>
-                <constraint firstAttribute="trailing" secondItem="lPs-1J-7GQ" secondAttribute="trailing" constant="10" id="fmU-60-ANO"/>
+                <constraint firstAttribute="trailing" secondItem="lPs-1J-7GQ" secondAttribute="trailing" id="fmU-60-ANO"/>
             </constraints>
             <size key="customSize" width="345" height="132"/>
             <point key="canvasLocation" x="280.15267175572518" y="49.295774647887328"/>

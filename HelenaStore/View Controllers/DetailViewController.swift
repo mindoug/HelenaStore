@@ -45,7 +45,7 @@ class DetailViewController: UIViewController {
         setupCollectionView()
         configureDataSource()
     }
-    
+   
     private func setupCollectionView() {
         let cells: [RegisterableView] = [
             .nib(DetailHeaderCell.self),
