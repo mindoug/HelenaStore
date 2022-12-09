@@ -24,9 +24,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="345" height="49"/>
                                 <color key="backgroundColor" name="mediumGrey"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="345" id="Ito-Kd-2Ne"/>
                                     <constraint firstAttribute="height" constant="49" id="MH6-Nt-IQV"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="345" id="XB2-Az-hLV"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
