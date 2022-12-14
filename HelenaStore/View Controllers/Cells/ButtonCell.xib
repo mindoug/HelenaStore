@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mRD-H5-dsu">
-                        <rect key="frame" x="0.0" y="0.0" width="345" height="49"/>
+                        <rect key="frame" x="0.0" y="0.0" width="345" height="48.666666666666664"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6t-De-XBh">
-                                <rect key="frame" x="0.0" y="0.0" width="345" height="49"/>
+                                <rect key="frame" x="0.0" y="0.0" width="345" height="48.666666666666664"/>
                                 <color key="backgroundColor" name="mediumGrey"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="MH6-Nt-IQV"/>
+                                    <constraint firstAttribute="height" constant="48.770000000000003" id="MH6-Nt-IQV"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -62,10 +62,10 @@
                         <color key="backgroundColor" name="mediumGrey"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="345" id="2Qn-hq-LKw"/>
-                            <constraint firstAttribute="height" constant="49" id="IEn-ZK-SUT"/>
+                            <constraint firstAttribute="height" constant="48.770000000000003" id="IEn-ZK-SUT"/>
                             <constraint firstAttribute="bottom" secondItem="e6t-De-XBh" secondAttribute="bottom" id="JEg-YT-fTF"/>
                             <constraint firstItem="euy-2T-qIm" firstAttribute="baseline" secondItem="LBb-Zs-iE5" secondAttribute="baseline" id="O00-m8-ReF"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="345" id="UO2-Yi-5Cd"/>
+                            <constraint firstAttribute="width" constant="345" id="UO2-Yi-5Cd"/>
                             <constraint firstItem="euy-2T-qIm" firstAttribute="centerX" secondItem="e6t-De-XBh" secondAttribute="centerX" id="fHi-B5-PCY"/>
                             <constraint firstItem="LBb-Zs-iE5" firstAttribute="centerY" secondItem="mRD-H5-dsu" secondAttribute="centerY" id="g9C-U3-I4r"/>
                             <constraint firstAttribute="trailing" secondItem="e6t-De-XBh" secondAttribute="trailing" id="jEa-3E-p6B"/>

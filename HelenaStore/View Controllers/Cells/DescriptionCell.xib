@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,33 +16,27 @@
                 <rect key="frame" x="0.0" y="0.0" width="345" height="132"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPs-1J-7GQ">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfb-J3-G32">
                         <rect key="frame" x="0.0" y="0.0" width="345" height="132"/>
-                        <color key="backgroundColor" name="mediumGrey"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="132" id="GlY-Kb-B0m"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ylT-ZZ-kdM"/>
                         </constraints>
-                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
+                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="lPs-1J-7GQ" secondAttribute="bottom" id="CvF-GQ-DAG"/>
-                <constraint firstItem="lPs-1J-7GQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DaR-ge-yfv"/>
-                <constraint firstItem="lPs-1J-7GQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ryb-1z-Clj"/>
-                <constraint firstAttribute="trailing" secondItem="lPs-1J-7GQ" secondAttribute="trailing" id="fmU-60-ANO"/>
+                <constraint firstItem="Pfb-J3-G32" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EJi-jJ-TrL"/>
+                <constraint firstAttribute="bottom" secondItem="Pfb-J3-G32" secondAttribute="bottom" id="PCy-fs-wQ1"/>
+                <constraint firstItem="Pfb-J3-G32" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ei1-xs-Z0l"/>
+                <constraint firstAttribute="trailing" secondItem="Pfb-J3-G32" secondAttribute="trailing" id="v7n-pO-bhE"/>
             </constraints>
             <size key="customSize" width="345" height="132"/>
             <point key="canvasLocation" x="280.15267175572518" y="49.295774647887328"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <namedColor name="mediumGrey">
-            <color red="0.77254901960784317" green="0.80784313725490198" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>

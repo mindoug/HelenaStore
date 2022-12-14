@@ -80,14 +80,14 @@ class HomeViewController: UIViewController {
             Section(type: .header, items: [
             Item()
             ]),
-            Section(type: .category, items: [
+             Section(type: .category, items: [
             Item(), Item(), Item(), Item()
             ]),
             Section(type: .selection, items: [
-            Item(), Item(), Item(), Item()
+            Item(), Item()
             ]),
             Section(type: .selection, items: [
-            Item(), Item(), Item(), Item()
+            Item(), Item()
             ])
         ]
         var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
