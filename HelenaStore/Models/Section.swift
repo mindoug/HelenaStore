@@ -31,6 +31,7 @@ struct Section: Hashable {
         case detailHeader
         case color
         case size
+        case headerImage
     }
     
     struct SectionType: RawRepresentable, Hashable {
@@ -50,5 +51,6 @@ struct Section: Hashable {
             .rawValue)
         static let color = SectionType(rawValue: Section.ItemSectionType.color.rawValue)
         static let size = SectionType(rawValue: Section.ItemSectionType.size.rawValue)
+        static let headerImage = SectionType(rawValue: Section.ItemSectionType.headerImage.rawValue)
     }
 }

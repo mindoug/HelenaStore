@@ -84,11 +84,8 @@ class HomeViewController: UIViewController {
             Item(), Item(), Item(), Item()
             ]),
             Section(type: .selection, items: [
-            Item(), Item()
+            Item(), Item(), Item(), Item(), Item(), Item(), Item(), Item()
             ]),
-            Section(type: .selection, items: [
-            Item(), Item()
-            ])
         ]
         var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
         snapshot.appendSections(sections)

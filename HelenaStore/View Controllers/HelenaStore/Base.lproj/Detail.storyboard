@@ -16,8 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sY2-Fw-v9I" customClass="detai">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="393" id="cpf-cm-bnQ"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z1o-mN-dDO">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                             <navigationBar opaque="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Um6-Do-dwW">
-                                <rect key="frame" x="0.0" y="50" width="392" height="44"/>
+                                <rect key="frame" x="0.0" y="50" width="390" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -27,14 +41,14 @@
                                     <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </textAttributes>
                                 <textAttributes key="largeTitleTextAttributes">
-                                    <color key="textColor" name="white"/>
+                                    <color key="textColor" name="dark"/>
                                     <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem id="e2k-cP-oRC">
                                         <barButtonItem key="rightBarButtonItem" image="bookmark" catalog="system" style="plain" id="zSB-jo-b3b">
-                                            <color key="tintColor" name="dark"/>
+                                            <color key="tintColor" name="brownGrey"/>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -44,23 +58,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </navigationBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sY2-Fw-v9I" customClass="detai">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z1o-mN-dDO">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="I7c-Ou-X2U"/>
                         <color key="backgroundColor" name="white"/>
                         <color key="tintColor" name="white"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="sY2-Fw-v9I" secondAttribute="bottom" constant="34" id="Geh-YK-D5n"/>
+                            <constraint firstAttribute="bottom" secondItem="sY2-Fw-v9I" secondAttribute="bottom" id="Geh-YK-D5n"/>
                             <constraint firstItem="sY2-Fw-v9I" firstAttribute="top" secondItem="WVu-5a-YFD" secondAttribute="top" id="afA-i8-Gl5"/>
                             <constraint firstItem="sY2-Fw-v9I" firstAttribute="leading" secondItem="I7c-Ou-X2U" secondAttribute="leading" id="f43-Dt-Eiv"/>
                             <constraint firstItem="sY2-Fw-v9I" firstAttribute="trailing" secondItem="I7c-Ou-X2U" secondAttribute="trailing" id="jdV-wC-qL2"/>
@@ -68,7 +71,7 @@
                     </view>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="detailCollectionView" destination="sY2-Fw-v9I" id="gy3-qQ-kAr"/>
                     </connections>
@@ -80,6 +83,9 @@
     </scenes>
     <resources>
         <image name="bookmark" catalog="system" width="110" height="128"/>
+        <namedColor name="brownGrey">
+            <color red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="dark">
             <color red="0.13333333333333333" green="0.16862745098039217" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

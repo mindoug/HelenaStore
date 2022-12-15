@@ -29,6 +29,7 @@ class DetailViewController: UIViewController {
             case .size: return LayoutSectionFactory.size()
             case .description: return LayoutSectionFactory.description()
             case .button: return LayoutSectionFactory.button()
+            case .headerImage: return LayoutSectionFactory.headerImage()
 
             default: return nil
             }
@@ -52,7 +53,8 @@ class DetailViewController: UIViewController {
             .nib(ColorCell.self),
             .nib(SizeCell.self),
             .nib(ButtonCell.self),
-            .nib(DescriptionCell.self)
+            .nib(DescriptionCell.self),
+            .nib(HeaderImageCell.self)
         ]
         
         detailCollectionView.register(cells: cells)
@@ -77,10 +79,15 @@ class DetailViewController: UIViewController {
                 return cell
             case .button: let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ButtonCell", for: indexPath)
                 return cell
+            case .headerImage: let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeaderImageCell", for: indexPath)
+                return cell
             default: return nil
             }
         }
         let sections = [
+            Section(type: .headerImage, items: [
+            Item()
+            ]),
             Section(type: .detailHeader, items: [
             Item()
             ]),
