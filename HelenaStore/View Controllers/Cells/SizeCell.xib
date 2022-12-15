@@ -37,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fuw-DI-wwG">
-                                <rect key="frame" x="0.0" y="24" width="231" height="45"/>
+                                <rect key="frame" x="0.0" y="33" width="231" height="45"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YqR-Ve-NMs">
                                         <rect key="frame" x="0.0" y="0.0" width="46.666666666666664" height="45"/>
@@ -160,8 +160,8 @@
                             <constraint firstItem="ZeJ-6V-108" firstAttribute="top" secondItem="wUX-2N-Rnc" secondAttribute="top" id="Pqw-Bh-33C"/>
                             <constraint firstAttribute="trailing" secondItem="Fuw-DI-wwG" secondAttribute="trailing" id="VMX-zJ-Gko"/>
                             <constraint firstItem="Fuw-DI-wwG" firstAttribute="leading" secondItem="wUX-2N-Rnc" secondAttribute="leading" id="VRf-ir-epb"/>
+                            <constraint firstItem="Fuw-DI-wwG" firstAttribute="top" secondItem="ZeJ-6V-108" secondAttribute="bottom" constant="15" id="YAD-jV-2xO"/>
                             <constraint firstItem="ZeJ-6V-108" firstAttribute="leading" secondItem="wUX-2N-Rnc" secondAttribute="leading" id="d2M-ux-o14"/>
-                            <constraint firstAttribute="bottom" secondItem="Fuw-DI-wwG" secondAttribute="bottom" constant="15" id="n4o-fg-qBW"/>
                         </constraints>
                     </view>
                 </subviews>

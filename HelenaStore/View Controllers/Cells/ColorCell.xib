@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="389" height="92"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hna-S0-Wuw">
-                                <rect key="frame" x="15" y="15" width="160" height="72"/>
+                                <rect key="frame" x="15" y="20" width="160" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaj-7p-Pc5">
                                         <rect key="frame" x="0.0" y="0.0" width="50.666666666666664" height="18"/>
@@ -123,10 +123,9 @@
                         </subviews>
                         <color key="backgroundColor" name="mediumGrey"/>
                         <constraints>
-                            <constraint firstItem="hna-S0-Wuw" firstAttribute="top" secondItem="C0G-Uk-9yo" secondAttribute="top" constant="15" id="8Y1-wZ-LcR"/>
                             <constraint firstItem="hna-S0-Wuw" firstAttribute="leading" secondItem="C0G-Uk-9yo" secondAttribute="leading" constant="15" id="Oj4-vN-vE5"/>
                             <constraint firstAttribute="height" constant="92" id="umx-dI-gs9"/>
-                            <constraint firstItem="hna-S0-Wuw" firstAttribute="top" secondItem="C0G-Uk-9yo" secondAttribute="top" constant="15" id="z1Y-hx-HPe"/>
+                            <constraint firstItem="hna-S0-Wuw" firstAttribute="top" secondItem="C0G-Uk-9yo" secondAttribute="top" constant="20" id="z1Y-hx-HPe"/>
                         </constraints>
                     </view>
                 </subviews>

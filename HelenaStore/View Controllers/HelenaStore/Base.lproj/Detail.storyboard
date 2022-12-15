@@ -47,7 +47,7 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem id="e2k-cP-oRC">
-                                        <barButtonItem key="rightBarButtonItem" image="bookmark" catalog="system" style="plain" id="zSB-jo-b3b">
+                                        <barButtonItem key="rightBarButtonItem" image="bookmark" catalog="system" id="zSB-jo-b3b">
                                             <color key="tintColor" name="brownGrey"/>
                                         </barButtonItem>
                                     </navigationItem>
